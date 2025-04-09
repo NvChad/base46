@@ -27,6 +27,9 @@ local hl_groups = {
   "TelescopePromptPrefix",
   "CursorLine",
   "Pmenu",
+  "BlinkCmpMenu",
+  "BlinkCmpDoc",
+  "BlinkCmpSignatureHelp",
   "CmpPmenu",
   "CmpDoc",
   "WinBar",
@@ -50,6 +53,21 @@ M.TelescopePromptBorder = {
 }
 
 M.CmpDocBorder = {
+  bg = "none",
+  fg = colors.grey,
+}
+
+M.BlinkCmpDocBorder = {
+  bg = "none",
+  fg = colors.grey,
+}
+
+M.BlinkCmpMenuBorder = {
+  bg = "none",
+  fg = colors.grey,
+}
+
+M.BlinkCmpDocBorder = {
   bg = "none",
   fg = colors.grey,
 }
