@@ -6,6 +6,7 @@ local highlights = {
   MiniTablineCurrent = {
     fg = colors.white,
     bg = colors.black,
+    underline = true,
   },
 
   MiniTablineVisible = {
@@ -21,6 +22,7 @@ local highlights = {
   MiniTablineModifiedCurrent = {
     fg = colors.green,
     bg = colors.black,
+    underline = true,
   },
 
   MiniTablineModifiedVisible = {
