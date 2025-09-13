@@ -79,11 +79,6 @@ M.polish_hl = {
     Type = { fg = M.base_30.blue },
   },
 
-  -- git = {
-  --   DiffAdd = { fg = M.base_30.darkgreen },
-  --   DiffDelete = { fg = M.base_30.brownred },
-  -- },
-
   nvimtree = {
     NvimTreeFolderName = { fg = M.base_30.white },
     NvimTreeOpenedFolderName = { fg = M.base_30.white, bold = true },
