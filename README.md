@@ -39,10 +39,12 @@ and then read `:h nvui.base46`
 - Edgy.nvim
 - Grug-far.nvim
 - Flash.nvim
+- Blink.nvim
+- Blink.pairs
 
 ## Configuration
 
-- Base46 is configured by [nvconfig](https://github.com/NvChad/ui/blob/v2.5/lua/nvconfig.lua) in your path.
+- Base46 is configured by [nvconfig](https://github.com/NvChad/ui/blob/v3.0/lua/nvconfig.lua) in your path.
 - Read the [themeing docs](https://nvchad.com/docs/config/theming)
 
 ## Highlight command
