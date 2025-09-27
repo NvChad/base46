@@ -38,22 +38,22 @@ M.base_30 = {
 }
 
 M.base_16 = {
-  base00 = "#f5f5f5",
-  base01 = "#ececec",
-  base02 = "#e5e5e5",
-  base03 = "#9ea7b1",
-  base04 = "#6e7681",
-  base05 = "#1b1f23",
+  base00 = M.base_30.black,
+  base01 = M.base_30.one_bg2,
+  base02 = M.base_30.one_bg3,
+  base03 = M.base_30.grey,
+  base04 = M.base_30.grey_fg,
+  base05 = M.base_30.white,
   base06 = "#2f363d",
   base07 = "#3b4045",
-  base08 = "#d64545",
-  base09 = "#e87c7c",
-  base0A = "#bb8009",
-  base0B = "#238636",
-  base0C = "#2c9ab7",
-  base0D = "#0969da",
-  base0E = "#8250df",
-  base0F = "#85e89d",
+  base08 = M.base_30.red,
+  base09 = M.base_30.baby_pink,
+  base0A = M.base_30.yellow,
+  base0B = M.base_30.green,
+  base0C = M.base_30.teal,
+  base0D = M.base_30.blue,
+  base0E = M.base_30.purple,
+  base0F = M.base_30.soft_green,
 }
 
 M.polish_hl = {
