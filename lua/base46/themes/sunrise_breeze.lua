@@ -31,8 +31,8 @@ M.base_30 = {
   todo = "#d4a72c",
   note = "#8250df",
   soft_green = "#85e89d",
-  statusline_bg = "#f5f5f5",
-  lightbg = "#ececec",
+  statusline_bg = "#e7e7e7",
+  lightbg = "#d7d7d7",
   pmenu_bg = "#0969da",
   folder_bg = "#68727d",
 }
