@@ -278,7 +278,7 @@ end
 -- @return The mixed color as a hex value
 M.mix = function(first, second, strength)
   if strength == nil then
-    strength = 0.5
+    strength = 50
   end
 
   local s = strength / 100
