@@ -16,6 +16,10 @@ return {
   ["@lsp.type.type"] = { link = "@type" },
   ["@lsp.type.typeParamater"] = { link = "TypeDef" },
   ["@lsp.type.variable"] = { link = "@variable" },
+  ["@lsp.type.const"] = { link = "Constant" },
+  ["@lsp.type.typeAlias"] = { link = "Type" },
+  ["@lsp.type.generic"] = { link = "@macro" },
+
   ["@event"] = { fg = theme.base08 },
   ["@modifier"] = { fg = theme.base08 },
   ["@regexp"] = { fg = theme.base0F },
