@@ -30,6 +30,8 @@ local integrations = {
   "whichkey",
 }
 
+local integrations_dir = opts.integrations_dir or nil
+
 for _, value in ipairs(opts.integrations) do
   table.insert(integrations, value)
 end
@@ -121,7 +123,19 @@ M.extend_default_hl = function(highlights, integration_name)
 end
 
 M.get_integration = function(name)
-  local highlights = require("base46.integrations." .. name)
+  local highlights
+
+  if not integrations_dir then
+    highlights = require("base46.integrations." .. name)
+  else
+    local ok
+    ok, highlights = pcall(require, integrations_dir .. "." .. name)
+
+    if not ok then
+      highlights = require("base46.integrations." .. name)
+    end
+  end
+
   return M.extend_default_hl(highlights, name)
 end
 
