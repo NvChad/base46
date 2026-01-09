@@ -129,10 +129,10 @@ M.get_integration = function(name)
     highlights = require("base46.integrations." .. name)
   else
     local ok
-    ok, highlights = pcall(require, integrations_dir .. "." .. name)
+    ok, highlights = pcall(require, "base46.integrations." .. name)
 
     if not ok then
-      highlights = require("base46.integrations." .. name)
+      highlights = require(integrations_dir .. "." .. name)
     end
   end
 
