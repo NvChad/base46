@@ -7,6 +7,7 @@ return {
   DapBreakPointRejected = { fg = colors.orange },
   DapLogPoint = { fg = colors.cyan },
   DapStopped = { fg = colors.baby_pink },
+  DapStoppedLine = { bg = colors.one_bg },
 
   -- DapUI
   DAPUIScope = { fg = colors.cyan },
@@ -46,4 +47,45 @@ return {
   DapUIRestartNC = { fg = colors.green },
   DapUIUnavailable = { fg = colors.grey_fg },
   DapUIUnavailableNC = { fg = colors.grey_fg },
+
+  -- DapView
+  NvimDapViewMissingData = { fg = colors.baby_pink },
+  NvimDapViewFileName = { fg = colors.vibrant_green },
+  NvimDapViewLineNumber = { fg = colors.cyan },
+  NvimDapViewSeparator = { fg = colors.light_grey },
+
+  NvimDapViewThread = { fg = colors.green },
+  NvimDapViewThreadStopped = { fg = colors.cyan },
+  NvimDapViewThreadError = { fg = colors.baby_pink },
+
+  NvimDapViewFrameCurrent = { fg = colors.orange },
+
+  NvimDapViewExceptionFilterEnabled = { fg = colors.green },
+  NvimDapViewExceptionFilterDisabled = { fg = colors.light_grey },
+
+  NvimDapViewTab = { fg = colors.light_grey, bg = colors.black2 },
+  NvimDapViewTabSelected = { fg = colors.white, bg = colors.black },
+
+  NvimDapViewControlNC = { fg = colors.grey_fg },
+  NvimDapViewControlPlay = { fg = colors.green },
+  NvimDapViewControlPause = { fg = colors.orange },
+  NvimDapViewControlStepInto = { fg = colors.blue },
+  NvimDapViewControlStepOut = { fg = colors.blue },
+  NvimDapViewControlStepOver = { fg = colors.blue },
+  NvimDapViewControlStepBack = { fg = colors.blue },
+  NvimDapViewControlRunLast = { fg = colors.green },
+  NvimDapViewControlTerminate = { fg = colors.red },
+  NvimDapViewControlDisconnect = { fg = colors.red },
+
+  NvimDapViewWatchExpr = { fg = colors.vibrant_green },
+  NvimDapViewWatchMore = { fg = colors.light_grey },
+  NvimDapViewWatchError = { fg = colors.baby_pink },
+  NvimDapViewWatchUpdated = { fg = colors.orange },
+
+  NvimDapViewBoolean = { link = "Boolean" },
+  NvimDapViewString = { link = "String" },
+  NvimDapViewNumber = { link = "Number" },
+  NvimDapViewFloat = { link = "Float" },
+  NvimDapViewFunction = { link = "Function" },
+  NvimDapViewConstant = { link = "Constant" },
 }
