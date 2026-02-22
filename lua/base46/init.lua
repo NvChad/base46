@@ -28,6 +28,7 @@ local integrations = {
   "tbline",
   "telescope",
   "whichkey",
+  "neotest",
 }
 
 for _, value in ipairs(opts.integrations) do
