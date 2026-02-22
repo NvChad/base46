@@ -29,6 +29,7 @@ local integrations = {
   "telescope",
   "whichkey",
   "gitsigns",
+  "neotest",
 }
 
 for _, value in ipairs(opts.integrations) do
