@@ -9,7 +9,7 @@ local highligths = {
   GitSignsDeleteNr = { fg = colors.red },
   GitSignsAddLn = { fg = colors.green },
   GitSignsDeleteLn = { fg = colors.red },
-  GitSignsCurrentLineBlame = { fg = colors.one_bg },
+  GitSignsCurrentLineBlame = { fg = colors.grey_fg },
 }
 
 return highligths
