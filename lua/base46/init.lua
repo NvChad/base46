@@ -20,6 +20,7 @@ local integrations = {
   "git",
   "lsp",
   "mason",
+  "neotest",
   "nvcheatsheet",
   "nvimtree",
   "statusline",
@@ -28,7 +29,6 @@ local integrations = {
   "tbline",
   "telescope",
   "whichkey",
-  "neotest",
 }
 
 for _, value in ipairs(opts.integrations) do
