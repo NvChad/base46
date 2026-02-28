@@ -18,6 +18,7 @@ local integrations = {
   "defaults",
   "devicons",
   "git",
+  "gitsigns",
   "lsp",
   "mason",
   "nvcheatsheet",
@@ -28,7 +29,6 @@ local integrations = {
   "tbline",
   "telescope",
   "whichkey",
-  "gitsigns",
 }
 
 for _, value in ipairs(opts.integrations) do
