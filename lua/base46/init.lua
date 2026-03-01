@@ -20,7 +20,6 @@ local integrations = {
   "git",
   "lsp",
   "mason",
-  "neotest",
   "nvcheatsheet",
   "nvimtree",
   "statusline",
