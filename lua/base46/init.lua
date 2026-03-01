@@ -18,7 +18,6 @@ local integrations = {
   "defaults",
   "devicons",
   "git",
-  "gitsigns",
   "lsp",
   "mason",
   "nvcheatsheet",
