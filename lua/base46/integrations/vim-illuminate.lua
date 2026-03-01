@@ -1,5 +1,5 @@
 return {
-  IlluminatedWordText = { bold = true, underline = true },
-  IlluminatedWordRead = { bold = true, underline = true },
-  IlluminatedWordWrite = { bold = true, underline = true },
+  IlluminatedWordText = { underline = true },
+  IlluminatedWordRead = { underline = true },
+  IlluminatedWordWrite = { underline = true },
 }
