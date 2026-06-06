@@ -3,11 +3,13 @@ local get_theme_tb = require("base46").get_theme_tb
 local colors = get_theme_tb "base_30"
 local generate_color = require("base46.colors").change_hex_lightness
 
-local statusline_bg = config.base46.transparency and "NONE" or colors.statusline_bg
+local statusline_bg = config.base46.transparency and "NONE" or colors.darker_black
+local statusline_nc_bg = config.base46.transparency and "NONE" or colors.statusline_bg
 local light_grey = generate_color(colors.light_grey, 8)
 
 local M = {
   StatusLine = { bg = statusline_bg },
+  StatusLineNC = { bg = statusline_nc_bg },
   St_gitIcons = { fg = light_grey, bg = statusline_bg, bold = true },
   St_Lsp = { fg = colors.nord_blue, bg = statusline_bg },
   St_LspMsg = { fg = colors.green, bg = statusline_bg },
