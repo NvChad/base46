@@ -63,7 +63,7 @@ M.polish_hl = {
     ["@punctuation.delimiter"] = { fg = M.base_30.red },
     ["@punctuation.bracket"] = { fg = M.base_30.purple },
     ["@constructor"] = { fg = M.base_30.yellow },
-    ['@variable.parameter'] = { fg = M.base_30.orange },
+    ["@variable.parameter"] = { fg = M.base_30.orange },
   },
 }
 

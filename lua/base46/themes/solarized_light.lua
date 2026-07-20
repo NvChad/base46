@@ -64,7 +64,7 @@ M.polish_hl = {
     TelescopePromptBorder = { bg = M.base_30.one_bg2, fg = M.base_30.one_bg2 },
     TelescopePromptNormal = { bg = M.base_30.one_bg2 },
     TelescopePromptPrefix = { bg = M.base_30.one_bg2 },
-  }
+  },
 }
 
 M.type = "light"

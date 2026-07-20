@@ -1,4 +1,4 @@
--- based on DROP + MITO GMK LASER CUSTOM KEYCAP SET 
+-- based on DROP + MITO GMK LASER CUSTOM KEYCAP SET
 
 local M = {}
 
