@@ -70,6 +70,7 @@ M.polish_hl = {
   },
 
   syntax = {
+    Operator = { fg = M.base_30.cyan },
     StorageClass = { fg = M.base_30.purple },
     Repeat = { fg = M.base_30.purple },
     Define = { fg = M.base_30.blue },

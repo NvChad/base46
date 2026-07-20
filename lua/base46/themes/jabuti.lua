@@ -61,6 +61,7 @@ M.polish_hl = {
     ["@operator"] = { fg = M.base_30.cyan },
   },
   syntax = {
+    Operator = { fg = M.base_30.cyan },
     Conditional = {
       fg = M.base_30.nord_blue,
     },

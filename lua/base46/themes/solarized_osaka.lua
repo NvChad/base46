@@ -66,6 +66,7 @@ M.polish_hl = {
   },
 
   syntax = {
+    Operator = { fg = "#849900" },
     Include = { fg = "#849900" },
     Tag = { fg = "#849900" },
   },

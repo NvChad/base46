@@ -70,6 +70,7 @@ M.polish_hl = {
   },
 
   syntax = {
+    Operator = { fg = M.base_30.cyan },
     Include = { fg = M.base_30.pink },
     Error = { fg = M.base_30.red },
     Identifier = { fg = M.base_30.white },

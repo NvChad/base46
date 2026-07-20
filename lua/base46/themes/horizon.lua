@@ -83,6 +83,7 @@ M.polish_hl = {
     ["@punctuation.bracket"] = { fg = M.base_30.yellow },
   },
   syntax = {
+    Operator = { fg = M.base_30.cyan },
     Constant = { fg = M.base_30.orange },
   },
   semantic_tokens = {

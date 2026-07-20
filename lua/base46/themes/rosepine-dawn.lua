@@ -63,6 +63,7 @@ M.type = "light"
 
 M.polish_hl = {
   syntax = {
+    Operator = { fg = M.base_30.cyan },
     Type = { fg = M.base_30.teal },
   },
 

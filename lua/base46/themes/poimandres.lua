@@ -90,6 +90,7 @@ M.polish_hl = {
   },
 
   syntax = {
+    Operator = { fg = M.base_30.nord_blue },
     Include = { fg = M.base_30.blue },
     Type = { fg = M.base_30.purple },
   },

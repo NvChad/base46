@@ -56,6 +56,7 @@ M.type = "dark"
 
 M.polish_hl = {
   syntax = {
+    Operator = { fg = M.base_30.cyan },
     Include = { fg = M.base_30.green },
     Function = { fg = M.base_30.red },
     Type = { fg = M.base_30.purple },

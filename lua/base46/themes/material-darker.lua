@@ -84,6 +84,7 @@ M.polish_hl = {
   },
 
   syntax = {
+    Operator = { fg = M.base_30.cyan },
     Identifier = { fg = M.base_30.white },
     Include = { fg = M.base_30.purple },
     Number = { fg = M.base_30.orange },

@@ -57,6 +57,7 @@ M.polish_hl = {
     Visual = { bg = M.base_30.black2 },
   },
   syntax = {
+    Operator = { fg = M.base_30.cyan },
     Function = { fg = M.base_30.yellow },
     Type = { fg = M.base_30.blue },
     Include = { fg = M.base_30.pink },

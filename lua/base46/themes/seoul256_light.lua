@@ -55,6 +55,7 @@ M.base_16 = {
 
 M.polish_hl = {
   syntax = {
+    Operator = { fg = M.base_30.cyan },
     Include = { fg = M.base_30.red },
     Boolean = { fg = M.base_30.orange },
   },

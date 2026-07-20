@@ -57,6 +57,9 @@ M.base_16 = {
 }
 
 M.polish_hl = {
+  syntax = {
+    Operator = { fg = M.base_30.cyan },
+  },
   defaults = {
     NormalFloat = { bg = M.base_30.black },
     FloatBorder = { fg = M.base_30.purple },

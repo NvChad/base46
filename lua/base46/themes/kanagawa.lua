@@ -67,6 +67,7 @@ M.polish_hl = {
   },
 
   syntax = {
+    Operator = { fg = M.base_30.cyan },
     Number = { fg = M.base_30.baby_pink },
   },
 }

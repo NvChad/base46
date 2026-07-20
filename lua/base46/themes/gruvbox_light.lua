@@ -58,6 +58,9 @@ M.base_16 = {
 M.type = "light"
 
 M.polish_hl = {
+  syntax = {
+    Operator = { fg = M.base_30.cyan },
+  },
   treesitter = {
     ["@operator"] = { fg = M.base_30.cyan },
   },

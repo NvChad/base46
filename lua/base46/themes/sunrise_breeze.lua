@@ -57,6 +57,9 @@ M.base_16 = {
 }
 
 M.polish_hl = {
+  syntax = {
+    Operator = { fg = M.base_30.cyan },
+  },
   defaults = {
     LineNr = { fg = M.base_30.grey },
     CursorLineNr = { fg = M.base_30.blue, bold = true },

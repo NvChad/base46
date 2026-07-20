@@ -58,6 +58,7 @@ M.base_16 = {
 
 M.polish_hl = {
   syntax = {
+    Operator = { fg = M.base_30.cyan },
     Keyword = { fg = M.base_30.cyan },
     Include = { fg = M.base_30.yellow },
     Tag = { fg = M.base_30.blue },

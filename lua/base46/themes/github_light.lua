@@ -67,6 +67,7 @@ M.polish_hl = {
   },
 
   syntax = {
+    Operator = { fg = M.base_30.orange },
     Constant = { fg = M.base_16.base07 },
     Tag = { fg = M.base_30.vibrant_green },
   },
