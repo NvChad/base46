@@ -59,6 +59,7 @@ M.polish_hl = {
     Boolean = { fg = M.base_30.orange },
   },
   treesitter = {
+    ["@operator"] = { fg = M.base_30.cyan },
     ["@module"] = { fg = M.base_30.brown },
     ["@keyword"] = { fg = M.base_30.red },
     ["@keyword.conditional"] = { fg = M.base_30.cyan },

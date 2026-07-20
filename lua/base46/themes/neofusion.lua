@@ -59,6 +59,7 @@ M.polish_hl = {
     StorageClass = { fg = M.base_30.orange },
   },
   treesitter = {
+    ["@operator"] = { fg = M.base_30.cyan },
     ["@constant"] = { fg = M.base_30.red },
     ["@variable.member"] = { fg = M.base_30.blue },
   },

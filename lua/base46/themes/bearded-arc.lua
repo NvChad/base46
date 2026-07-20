@@ -59,6 +59,7 @@ M.type = "dark"
 
 M.polish_hl = {
   treesitter = {
+    ["@operator"] = { fg = M.base_30.cyan },
     ["@variable.parameter"] = { fg = M.base_30.pink },
     ["@attribute"] = { fg = M.base_30.purple },
   },

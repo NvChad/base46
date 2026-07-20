@@ -62,6 +62,7 @@ M.polish_hl = {
   },
   treesitter = {
     ["@operator"] = { fg = M.base_30.cyan },
+    ["@operator"] = { fg = M.base_30.cyan },
     ["@function"] = { fg = M.base_30.red },
     ["@function.macro"] = { fg = M.base_30.red },
     ["@keyword.directive"] = { fg = M.base_30.green },

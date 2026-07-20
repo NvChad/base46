@@ -57,6 +57,7 @@ M.base_16 = {
 
 M.polish_hl = {
   treesitter = {
+    ["@operator"] = { fg = M.base_30.cyan },
     ["@keyword.import"] = { fg = M.base_30.purple },
     ["@uri"] = { fg = M.base_30.blue },
     ["@tag.delimiter"] = { fg = M.base_30.red },

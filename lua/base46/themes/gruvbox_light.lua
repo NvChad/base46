@@ -58,6 +58,9 @@ M.base_16 = {
 M.type = "light"
 
 M.polish_hl = {
+  treesitter = {
+    ["@operator"] = { fg = M.base_30.cyan },
+  },
   tbline = {
     TbLineThemeToggleBtn = { fg = M.base_30.black, bg = M.base_30.white },
   },

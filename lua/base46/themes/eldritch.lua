@@ -73,6 +73,7 @@ M.polish_hl = {
     NeogitDiffContext = { bg = "NONE" },
   },
   treesitter = {
+    ["@operator"] = { fg = M.base_30.cyan },
     Include = { fg = M.base_30.green },
     Boolean = { fg = M.base_30.red },
     Type = { fg = M.base_30.cyan },

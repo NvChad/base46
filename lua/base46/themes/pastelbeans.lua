@@ -54,6 +54,12 @@ M.base_16 = {
   base0F = "#888888",
 }
 
+M.polish_hl = {
+  treesitter = {
+    ["@operator"] = { fg = M.base_30.cyan },
+  },
+}
+
 M.type = "dark"
 
 M = require("base46").override_theme(M, "pastelbeans")

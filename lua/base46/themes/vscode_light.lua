@@ -62,6 +62,7 @@ M.polish_hl = {
     Include = { fg = M.base_30.pink },
   },
   treesitter = {
+    ["@operator"] = { fg = M.base_30.cyan },
     ["@function.macro"] = { fg = M.base_30.yellow },
     ["@function.method"] = { fg = M.base_30.yellow },
     ["@function"] = { fg = M.base_30.yellow },

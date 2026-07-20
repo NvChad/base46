@@ -53,6 +53,9 @@ M.base_16 = {
 }
 
 M.polish_hl = {
+  treesitter = {
+    ["@operator"] = { fg = M.base_30.cyan },
+  },
   telescope = {
     TelescopeSelection = { bg = M.base_30.one_bg2 },
     TelescopePromptBorder = { bg = M.base_30.one_bg2, fg = M.base_30.one_bg2 },

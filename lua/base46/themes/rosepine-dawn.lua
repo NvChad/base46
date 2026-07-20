@@ -67,6 +67,7 @@ M.polish_hl = {
   },
 
   treesitter = {
+    ["@operator"] = { fg = M.base_30.cyan },
     ["@type.builtin"] = { fg = M.base_30.teal, bold = true },
     ["@variable.parameter"] = { fg = M.base_30.purple },
   },

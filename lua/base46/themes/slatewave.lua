@@ -140,6 +140,7 @@ M.polish_hl = {
   },
 
   treesitter = {
+    ["@operator"] = { fg = slate_400 },
     -- Identifiers
     ["@variable"] = { fg = slate_200 },
     ["@variable.builtin"] = { fg = purple }, -- this / self / super

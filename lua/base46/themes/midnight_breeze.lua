@@ -63,6 +63,7 @@ M.polish_hl = {
     Substitute = { fg = M.base_30.white, bg = M.base_30.one_bg3 },
   },
   treesitter = {
+    ["@operator"] = { fg = M.base_30.cyan },
     ["@variable"] = { fg = M.base_30.light_grey },
     ["@variable.builtin"] = { fg = M.base_30.blue },
     ["@variable.parameter"] = { fg = M.base_30.light_grey },

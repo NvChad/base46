@@ -61,6 +61,7 @@ M.polish_hl = {
     Tag = { fg = M.base_30.red },
   },
   treesitter = {
+    ["@operator"] = { fg = M.base_30.cyan },
     ['@tag'] = { fg = M.base_30.red },
     ['@tag.attribute'] = { fg = M.base_30.purple },
     ['@tag.delimiter'] = { fg = M.base_30.brown },

@@ -57,6 +57,7 @@ M.base_16 = {
 
 M.polish_hl = {
   treesitter = {
+    ["@operator"] = { fg = M.base_30.cyan },
     luaTSField = { fg = M.base_16.base0D },
     ["@tag.delimiter"] = { fg = M.base_30.cyan },
     ["@function"] = { fg = M.base_30.orange },
