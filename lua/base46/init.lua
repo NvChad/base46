@@ -192,6 +192,9 @@ end
 
 M.load_all_highlights = function()
   require("plenary.reload").reload_module "base46"
+  if integrations_dir then
+    require("plenary.reload").reload_module(integrations_dir)
+  end
   M.compile()
 
   for _, name in ipairs(integrations) do
