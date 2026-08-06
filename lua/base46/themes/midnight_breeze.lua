@@ -54,6 +54,9 @@ M.base_16 = {
 }
 
 M.polish_hl = {
+  syntax = {
+    Operator = { fg = M.base_30.cyan },
+  },
   defaults = {
     LineNr = { fg = M.base_30.grey },
     CursorLineNr = { fg = M.base_30.blue, bold = true },
@@ -63,6 +66,7 @@ M.polish_hl = {
     Substitute = { fg = M.base_30.white, bg = M.base_30.one_bg3 },
   },
   treesitter = {
+    ["@operator"] = { fg = M.base_30.cyan },
     ["@variable"] = { fg = M.base_30.light_grey },
     ["@variable.builtin"] = { fg = M.base_30.blue },
     ["@variable.parameter"] = { fg = M.base_30.light_grey },

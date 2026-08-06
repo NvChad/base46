@@ -60,6 +60,7 @@ M.type = "dark"
 M.polish_hl = {
 
   treesitter = {
+    ["@operator"] = { fg = M.base_30.baby_pink },
     ["@constructor"] = { fg = M.base_30.cyan },
     ["@keyword"] = { fg = M.base_30.red },
     ["@function.method.call"] = { fg = M.base_30.cyan },

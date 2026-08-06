@@ -56,6 +56,9 @@ M.base_16 = {
 }
 
 M.polish_hl = {
+  syntax = {
+    Operator = { fg = M.base_30.cyan },
+  },
   git = {
     DiffAdd = { fg = M.base_30.green },
   },
@@ -83,6 +86,7 @@ M.polish_hl = {
   },
 
   treesitter = {
+    ["@operator"] = { fg = M.base_30.cyan },
     ["@tag"] = { fg = M.base_30.orange },
     ["@variable.member"] = { fg = M.base_16.base05 },
     ["@keyword.import"] = { fg = M.base_16.base08 },

@@ -55,12 +55,14 @@ M.base_16 = {
 
 M.polish_hl = {
   syntax = {
+    Operator = { fg = M.base_30.red },
     Statement = { fg = M.base_30.dark_purple },
     PreProc = { fg = M.base_30.red },
     Include = { fg = M.base_30.red },
   },
 
   treesitter = {
+    ["@operator"] = { fg = M.base_30.red },
     ["@operator"] = { fg = M.base_30.red },
     ["@constant"] = { fg = M.base_30.purple },
     ["@function.macro"] = { fg = M.base_30.blue },

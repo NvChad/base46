@@ -58,6 +58,7 @@ M.base_16 = {
 
 M.polish_hl = {
   treesitter = {
+    ["@operator"] = { fg = "#849900" },
     ["@constant"] = { fg = "#29a298" }, -- could be deleted if #284 get merged
     ["@operator"] = { fg = "#849900" },
     ["@variable.parameter"] = { fg = "#c94c16" },
@@ -65,6 +66,7 @@ M.polish_hl = {
   },
 
   syntax = {
+    Operator = { fg = "#849900" },
     Include = { fg = "#849900" },
     Tag = { fg = "#849900" },
   },

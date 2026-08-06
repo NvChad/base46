@@ -54,6 +54,7 @@ M.base_16 = {
 
 M.polish_hl = {
   treesitter = {
+    ["@operator"] = { fg = M.base_30.cyan },
     ["@variable"] = { fg = M.base_30.white },
     ["@module"] = { fg = M.base_30.white },
     ["@variable.member"] = { fg = M.base_30.white },
@@ -69,6 +70,7 @@ M.polish_hl = {
   },
 
   syntax = {
+    Operator = { fg = M.base_30.cyan },
     StorageClass = { fg = M.base_30.purple },
     Repeat = { fg = M.base_30.purple },
     Define = { fg = M.base_30.blue },

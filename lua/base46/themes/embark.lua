@@ -56,11 +56,13 @@ M.type = "dark"
 
 M.polish_hl = {
   syntax = {
+    Operator = { fg = M.base_30.cyan },
     Include = { fg = M.base_30.green },
     Function = { fg = M.base_30.red },
     Type = { fg = M.base_30.purple },
   },
   treesitter = {
+    ["@operator"] = { fg = M.base_30.cyan },
     ["@operator"] = { fg = M.base_30.cyan },
     ["@function"] = { fg = M.base_30.red },
     ["@function.macro"] = { fg = M.base_30.red },

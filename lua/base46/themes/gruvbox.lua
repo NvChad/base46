@@ -66,6 +66,7 @@ M.polish_hl = {
 
   treesitter = {
     ["@operator"] = { fg = M.base_30.nord_blue },
+    ["@operator"] = { fg = M.base_30.nord_blue },
   },
 }
 

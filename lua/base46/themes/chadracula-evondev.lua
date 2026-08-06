@@ -60,6 +60,7 @@ M.base_16 = {
 
 M.polish_hl = {
   treesitter = {
+    ["@operator"] = { fg = M.base_30.cyan },
     ["@function.builtin"] = { fg = M.base_30.cyan },
     ["@number"] = { fg = M.base_30.purple },
     ["@module"] = { fg = M.base_30.white },
@@ -69,6 +70,7 @@ M.polish_hl = {
   },
 
   syntax = {
+    Operator = { fg = M.base_30.cyan },
     Include = { fg = M.base_30.pink },
     Error = { fg = M.base_30.red },
     Identifier = { fg = M.base_30.white },

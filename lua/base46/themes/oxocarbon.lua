@@ -57,7 +57,11 @@ M.base_16 = {
 }
 
 M.polish_hl = {
+  treesitter = {
+    ["@operator"] = { fg = M.base_30.cyan },
+  },
   syntax = {
+    Operator = { fg = M.base_30.cyan },
     Conditional = { fg = M.base_30.nord_blue },
     Tag = { fg = M.base_30.white },
   },
