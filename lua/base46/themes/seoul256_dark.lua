@@ -57,9 +57,11 @@ M.type = "dark"
 
 M.polish_hl = {
   syntax = {
+    Operator = { fg = M.base_30.cyan },
     Constant = { fg = M.base_30.orange },
   },
   treesitter = {
+    ["@operator"] = { fg = M.base_30.cyan },
     ["@constant"] = { fg = M.base_30.brown },
     ["@punctuation.bracket"] = { fg = M.base_30.orange },
   },

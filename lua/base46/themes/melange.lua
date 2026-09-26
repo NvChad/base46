@@ -60,6 +60,7 @@ M.type = "dark"
 
 M.polish_hl = {
   treesitter = {
+    ["@operator"] = { fg = M.base_30.firered },
     ["@variable.member"] = { fg = M.base_30.white },
     ["@variable.member.key"] = { fg = M.base_30.white },
     ["@function.macro"] = {

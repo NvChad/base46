@@ -13,7 +13,6 @@ local highligths = {
 
   BlinkPairsUnmatched = { fg = colors.red },
   BlinkPairsMatchParen = { fg = colors.cyan },
-
 }
 
 return highligths

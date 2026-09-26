@@ -54,12 +54,16 @@ M.base_16 = {
 }
 
 M.polish_hl = {
+  syntax = {
+    Operator = { fg = M.base_30.red },
+  },
   treesitter = {
+    ["@operator"] = { fg = M.base_30.red },
     ["@operator"] = { fg = M.base_30.red },
     ["@punctuation.delimiter"] = { fg = M.base_30.red },
     ["@punctuation.bracket"] = { fg = M.base_30.purple },
     ["@constructor"] = { fg = M.base_30.yellow },
-    ['@variable.parameter'] = { fg = M.base_30.orange },
+    ["@variable.parameter"] = { fg = M.base_30.orange },
   },
 }
 

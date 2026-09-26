@@ -31,7 +31,7 @@ M.base_30 = {
   lightbg = "#C8C8C8",
   pmenu_bg = "#67A9AA",
   folder_bg = "#6a6a6a",
-  brown = '#6a6a6a',
+  brown = "#6a6a6a",
 }
 
 M.base_16 = {
@@ -55,10 +55,12 @@ M.base_16 = {
 
 M.polish_hl = {
   syntax = {
+    Operator = { fg = M.base_30.cyan },
     Include = { fg = M.base_30.red },
     Boolean = { fg = M.base_30.orange },
   },
   treesitter = {
+    ["@operator"] = { fg = M.base_30.cyan },
     ["@module"] = { fg = M.base_30.brown },
     ["@keyword"] = { fg = M.base_30.red },
     ["@keyword.conditional"] = { fg = M.base_30.cyan },

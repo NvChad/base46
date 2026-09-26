@@ -46,7 +46,7 @@ M.base_16 = {
   base05 = "#435862",
   base06 = "#7E8EAA",
   base07 = "#546e7a",
-  base08 =  M.base_30.yellow,
+  base08 = M.base_30.yellow,
   base09 = "#F76D47",
   base0A = "#00BCD4",
   base0B = "#91B859",
@@ -56,11 +56,11 @@ M.base_16 = {
   base0F = "#E53935",
 }
 
-
 M.polish_hl = {
   treesitter = {
+    ["@operator"] = { fg = M.base_30.cyan },
     ["@variable"] = { fg = M.base_16.base07 },
-    ["@module"] = { fg =  M.base_16.base07 },
+    ["@module"] = { fg = M.base_16.base07 },
     ["@variable.member"] = { fg = M.base_16.base07 },
 
     ["@type.builtin"] = { fg = M.base_30.purple },
@@ -74,6 +74,7 @@ M.polish_hl = {
   },
 
   syntax = {
+    Operator = { fg = M.base_30.cyan },
     StorageClass = { fg = M.base_30.purple },
     Repeat = { fg = M.base_30.purple },
     Define = { fg = M.base_30.blue },

@@ -53,6 +53,9 @@ M.base_16 = {
 }
 
 M.polish_hl = {
+  syntax = {
+    Operator = { fg = M.base_30.cyan },
+  },
   whichkey = {
     WhichKeyDesc = { fg = M.base_30.white },
     WhichKey = { fg = M.base_30.white },
@@ -64,6 +67,7 @@ M.polish_hl = {
   },
 
   treesitter = {
+    ["@operator"] = { fg = M.base_30.cyan },
     ["@punctuation.bracket"] = { fg = M.base_30.nord_blue },
   },
 

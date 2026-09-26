@@ -53,15 +53,17 @@ M.base_16 = {
 }
 
 M.polish_hl = {
-  defaults =  {
+  defaults = {
     Visual = { bg = M.base_30.black2 },
   },
   syntax = {
+    Operator = { fg = M.base_30.cyan },
     Function = { fg = M.base_30.yellow },
     Type = { fg = M.base_30.blue },
     Include = { fg = M.base_30.pink },
   },
   treesitter = {
+    ["@operator"] = { fg = M.base_30.cyan },
     ["@function.macro"] = { fg = M.base_30.yellow },
     ["@function.method"] = { fg = M.base_30.yellow },
     ["@function"] = { fg = M.base_30.yellow },

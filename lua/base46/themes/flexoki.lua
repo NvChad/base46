@@ -58,11 +58,13 @@ M.base_16 = {
 
 M.polish_hl = {
   syntax = {
+    Operator = { fg = M.base_30.cyan },
     Keyword = { fg = M.base_30.cyan },
     Include = { fg = M.base_30.yellow },
     Tag = { fg = M.base_30.blue },
   },
   treesitter = {
+    ["@operator"] = { fg = M.base_30.cyan },
     ["@keyword"] = { fg = M.base_30.cyan },
     ["@variable.parameter"] = { fg = M.base_30.baby_pink },
     ["@tag.attribute"] = { fg = M.base_30.orange },

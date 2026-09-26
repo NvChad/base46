@@ -1,4 +1,4 @@
--- based on DROP + MITO GMK LASER CUSTOM KEYCAP SET 
+-- based on DROP + MITO GMK LASER CUSTOM KEYCAP SET
 
 local M = {}
 
@@ -55,7 +55,11 @@ M.base_16 = {
 }
 
 M.polish_hl = {
+  syntax = {
+    Operator = { fg = M.base_30.cyan },
+  },
   treesitter = {
+    ["@operator"] = { fg = M.base_30.cyan },
     ["@tag.attribute"] = { fg = M.base_30.orange },
     ["@tag.delimiter"] = { fg = M.base_30.cyan },
   },

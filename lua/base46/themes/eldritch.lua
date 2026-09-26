@@ -57,6 +57,9 @@ M.base_16 = {
 }
 
 M.polish_hl = {
+  syntax = {
+    Operator = { fg = M.base_30.cyan },
+  },
   defaults = {
     NormalFloat = { bg = M.base_30.black },
     FloatBorder = { fg = M.base_30.purple },
@@ -73,6 +76,7 @@ M.polish_hl = {
     NeogitDiffContext = { bg = "NONE" },
   },
   treesitter = {
+    ["@operator"] = { fg = M.base_30.cyan },
     Include = { fg = M.base_30.green },
     Boolean = { fg = M.base_30.red },
     Type = { fg = M.base_30.cyan },

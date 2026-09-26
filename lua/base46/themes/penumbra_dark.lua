@@ -57,6 +57,7 @@ M.base_16 = {
 
 M.polish_hl = {
   treesitter = {
+    ["@operator"] = { fg = M.base_30.cyan },
     ["@variable.member.key"] = { fg = M.base_30.red },
     ["@punctuation.bracket"] = { fg = M.base_16.base08 },
     ["@constructor"] = { fg = M.base_30.orange },

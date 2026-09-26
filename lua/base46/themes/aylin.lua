@@ -57,13 +57,15 @@ M.type = "dark"
 
 M.polish_hl = {
   syntax = {
+    Operator = { fg = M.base_30.cyan },
     Include = { fg = M.base_30.blue },
     Tag = { fg = M.base_30.red },
   },
   treesitter = {
-    ['@tag'] = { fg = M.base_30.red },
-    ['@tag.attribute'] = { fg = M.base_30.purple },
-    ['@tag.delimiter'] = { fg = M.base_30.brown },
+    ["@operator"] = { fg = M.base_30.cyan },
+    ["@tag"] = { fg = M.base_30.red },
+    ["@tag.attribute"] = { fg = M.base_30.purple },
+    ["@tag.delimiter"] = { fg = M.base_30.brown },
     ["@keyword.function"] = { fg = M.base_30.blue },
     ["@keyword.exception"] = { fg = M.base_30.blue },
     ["@type.builtin"] = { fg = M.base_30.red },
