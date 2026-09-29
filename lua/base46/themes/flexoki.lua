@@ -1,25 +1,23 @@
 -- Credits to original theme https://github.com/kepano/flexoki/
 -- This is a modified version of it
 
--- return colors
 local M = {}
 
 M.base_30 = {
-  white = "#CECDC3",
   darker_black = "#171616",
-  black = "#100F0F", --  nvim bg
-  black2 = "#1c1b1b",
-  one_bg = "#292626", -- real bg of onedark
-  one_bg2 = "#353232",
-  one_bg3 = "#373434",
-  grey = "#393636",
-  grey_fg = "#555050",
-  grey_fg2 = "#5f5959",
-  light_grey = "#6a6363",
+  black = "#100F0F", --  bg (nvim bg)
+  black2 = "#1C1B1A", -- bg2 (secondary bg)
+  one_bg = "#282726", -- ui (borders)
+  one_bg2 = "#343331", -- ui2 (hovered borders)
+  one_bg3 = "#403E3C", -- ui3 (active borders)
+  grey = "#575653", -- tx3 (faint text)
+  grey_fg = "#6F6E69",
+  grey_fg2 = "#878580", -- tx2 (muted text)
+  light_grey = "#B7B5AC",
+  white = "#CECDC3", -- tx1
   red = "#D14D41",
   baby_pink = "#d36da1",
   pink = "#CE5D97",
-  line = "#292626", -- for lines like vertsplit
   green = "#879A39",
   vibrant_green = "#7e9f0e",
   nord_blue = "#4385BE",
@@ -33,9 +31,10 @@ M.base_30 = {
   cyan = "#3AA99F",
   statusline_bg = "#171616",
   lightbg = "#292626",
-  pmenu_bg = "#3AA99F",
-  folder_bg = "#4385BE",
 }
+M.base_30.pmenu_bg = M.base_30.cyan
+M.base_30.folder_bg = M.base_30.blue
+M.base_30.line = M.base_30.one_bg -- for lines like vertsplit
 
 M.base_16 = {
   base00 = M.base_30.black,
@@ -56,21 +55,122 @@ M.base_16 = {
   base0F = M.base_30.teal,
 }
 
+local colors = {
+  keyword = M.base_30.green,
+  keyword_variable = M.base_30.blue,
+  include = M.base_30.red,
+
+  constructor = M.base_30.red,
+  punctuation = M.base_30.grey_fg2,
+  operator = M.base_30.grey_fg2,
+
+  tag = M.base_30.white,
+  type = M.base_30.orange,
+  boolean = M.base_30.yellow,
+  module = M.base_30.green,
+  call = M.base_30.orange,
+  variable = M.base_30.white,
+  variable_builtin = M.base_30.blue,
+  member = M.base_30.white,
+  property = M.base_30.blue,
+  attribute = M.base_30.orange,
+
+  special = M.base_30.pink,
+  specialChar = M.base_30.pink,
+
+  comment = M.base_30.grey,
+  number = M.base_30.purple,
+  functions = M.base_30.orange,
+  string = M.base_30.cyan,
+  parameter = M.base_30.blue,
+  constant = M.base_30.yellow,
+}
+
 M.polish_hl = {
+  tbline = {
+    TbFill = { bg = "NONE" },
+    TbBufOn = { fg = M.base_30.white, bg = M.base_30.black },
+    TbBufOnClose = { fg = M.base_30.red, bg = M.base_30.black },
+    TbBufOff = { fg = M.base_30.grey, bg = "NONE" },
+    TbBufOffClose = { bg = "NONE" },
+    TbBufOnModified = { fg = M.base_30.green, bg = M.base_30.black },
+    TbBufOffModified = { fg = M.base_30.red, bg = "NONE" },
+  },
+  telescope = {
+    TelescopeResultsNormal = { fg = M.base_30.grey_fg2 },
+    TelescopeSelection = { fg = M.base_30.white },
+    TelescopeMatching = { fg = M.base_30.green, bg = "NONE", bold = true },
+  },
   syntax = {
-    Keyword = { fg = M.base_30.cyan },
-    Include = { fg = M.base_30.yellow },
-    Tag = { fg = M.base_30.blue },
+    Boolean = { fg = colors.boolean },
+    Character = { fg = colors.specialChar },
+    Conditional = { fg = colors.keyword },
+    Constant = { fg = colors.constant },
+    Define = { fg = colors.keyword_variable, sp = "none" },
+    Delimiter = { fg = colors.punctuation },
+    Float = { fg = colors.number },
+    Variable = { fg = colors.variable },
+    Function = { fg = colors.functions },
+    Identifier = { fg = colors.keyword, sp = "none" },
+    Include = { fg = colors.include },
+    Keyword = { fg = colors.keyword },
+    Label = { fg = colors.string },
+    Number = { fg = colors.number },
+    Operator = { fg = colors.operator, sp = "none" },
+    Repeat = { fg = colors.keyword },
+    Special = { fg = colors.special },
+    SpecialChar = { fg = colors.specialChar },
+    Statement = { fg = colors.constructor },
+    StorageClass = { fg = colors.constructor },
+    String = { fg = colors.string },
+    Structure = { fg = colors.constructor },
+    Tag = { fg = colors.tag },
+    Type = { fg = colors.type, sp = "none" },
+    Typedef = { fg = colors.type },
   },
   treesitter = {
-    ["@keyword"] = { fg = M.base_30.cyan },
-    ["@variable.parameter"] = { fg = M.base_30.baby_pink },
-    ["@tag.attribute"] = { fg = M.base_30.orange },
-    ["@tag"] = { fg = M.base_30.blue },
-    ["@string"] = { fg = M.base_30.green },
-    ["@string.special.url"] = { fg = M.base_30.green },
-    ["@markup.link.url"] = { fg = M.base_30.green },
-    ["@punctuation.bracket"] = { fg = M.base_30.yellow },
+    ["@keyword"] = { fg = colors.keyword_variable },
+    ["@keyword.return"] = { fg = colors.keyword },
+    ["@keyword.conditional"] = { fg = colors.keyword },
+    ["@keyword.operator"] = { fg = colors.keyword },
+    ["@keyword.function"] = { fg = colors.keyword },
+    ["@keyword.repeat"] = { fg = colors.keyword },
+    ["@keyword.exception"] = { fg = colors.keyword },
+
+    ["@constant"] = { fg = colors.constant },
+    ["@constant.builtin"] = { fg = colors.constant },
+    ["@variable"] = { fg = colors.variable },
+    ["@variable.builtin"] = { fg = colors.variable_builtin },
+    ["@variable.member"] = { fg = colors.member },
+    ["@variable.parameter"] = { fg = colors.parameter },
+    ["@attribute"] = { fg = colors.attribute },
+    ["@property"] = { fg = colors.property },
+
+    ["@tag.attribute"] = { bg = colors.tag },
+    ["@tag"] = { bg = colors.tag },
+
+    ["@string"] = { fg = colors.string },
+    ["@string.special.url"] = { bg = colors.string },
+    ["@markup.link.url"] = { bg = colors.string },
+
+    ["@punctuation.bracket"] = { fg = colors.punctuation },
+    ["@punctuation.delimiter"] = { fg = colors.punctuation },
+
+    ["@operator"] = { fg = colors.operator },
+    ["@constructor"] = { fg = colors.constructor },
+
+    ["@function.call"] = { fg = colors.call },
+    ["@function.method.call"] = { fg = colors.call },
+    ["@function.builtin"] = { fg = colors.keyword },
+
+    ["@type.builtin"] = { fg = colors.type },
+
+    ["@number"] = { fg = colors.number },
+    ["@number.float"] = { fg = colors.number },
+
+    ["@comment"] = { fg = colors.comment },
+    ["@function"] = { fg = colors.functions },
+    ["@module"] = { fg = colors.module },
   },
 }
 
