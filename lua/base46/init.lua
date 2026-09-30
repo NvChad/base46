@@ -22,6 +22,7 @@ local integrations = {
   "mason",
   "nvcheatsheet",
   "nvimtree",
+  "render-markdown",
   "statusline",
   "syntax",
   "treesitter",
