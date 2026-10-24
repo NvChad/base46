@@ -4,7 +4,6 @@ local mixcolors = require("base46.colors").mix
 
 local highlights = {
   CmpItemAbbr = { fg = colors.white },
-  CmpItemAbbrMatch = { fg = colors.blue, bold = true },
   CmpDoc = { bg = colors.black },
   CmpDocBorder = { fg = colors.grey_fg },
   CmpPmenu = { bg = colors.black },
@@ -114,6 +113,10 @@ if cmp_ui.style == "atom_colored" then
   for key, value in pairs(item_kinds) do
     item_kinds[key] = { fg = value.fg, bg = mixcolors(value.fg, colors.black, 70) }
   end
+end
+
+if cmp_ui.match == true then
+  highlights.CmpItemAbbrMatch = { fg = colors.blue, bold = true }
 end
 
 highlights = vim.tbl_deep_extend("force", highlights, styles[cmp_ui.style] or {})
