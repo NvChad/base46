@@ -192,6 +192,7 @@ end
 
 M.load_all_highlights = function()
   require("plenary.reload").reload_module "base46"
+  package.loaded["themes." .. opts.theme] = nil
   if integrations_dir then
     require("plenary.reload").reload_module(integrations_dir)
   end
