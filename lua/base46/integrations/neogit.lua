@@ -1,5 +1,5 @@
 local colors = require("base46").get_theme_tb "base_30"
-local lighten_col = require("base46.colors").change_hex_lightness
+local mix = require("base46.colors").mix
 
 local highligths = {
   NeogitGraphAuthor = { fg = colors.orange },
@@ -33,12 +33,12 @@ local highligths = {
   NeogitDiffContextHighlight = { bg = colors.black2 },
   NeogitDiffContextCursor = { bg = colors.one_bg },
   NeogitDiffAdditions = { fg = colors.green },
-  NeogitDiffAdd = { fg = colors.green, bg = lighten_col(colors.green, -50) },
-  NeogitDiffAddHighlight = { fg = colors.green, bg = lighten_col(colors.green, -47) },
+  NeogitDiffAdd = { fg = colors.green, bg = mix(colors.green, colors.black, 82) },
+  NeogitDiffAddHighlight = { fg = colors.green, bg = mix(colors.green, colors.black, 78) },
   NeogitDiffAddCursor = { bg = colors.one_bg, fg = colors.green },
   NeogitDiffDeletions = { fg = colors.red },
-  NeogitDiffDelete = { bg = lighten_col(colors.red, -50), fg = colors.red },
-  NeogitDiffDeleteHighlight = { bg = lighten_col(colors.red, -47), fg = colors.red },
+  NeogitDiffDelete = { bg = mix(colors.red, colors.black, 82), fg = colors.red },
+  NeogitDiffDeleteHighlight = { bg = mix(colors.red, colors.black, 78), fg = colors.red },
   NeogitDiffDeleteCursor = { bg = colors.one_bg, fg = colors.red },
 
   NeogitPopupSwitchKey = { fg = colors.purple },
@@ -59,7 +59,7 @@ local highligths = {
 
   NeogitChangeModified = { fg = colors.blue, bold = true, italic = true },
 
-  NeogitChangeAdded = { fg = colors.green, bg = lighten_col(colors.green, -30), bold = true, italic = true },
+  NeogitChangeAdded = { fg = colors.green, bg = mix(colors.green, colors.black, 75), bold = true, italic = true },
 
   NeogitChangeDeleted = { fg = colors.red, bold = true, italic = true },
   NeogitChangeRenamed = { fg = colors.purple, bold = true, italic = true },
