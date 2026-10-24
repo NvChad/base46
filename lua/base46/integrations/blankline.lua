@@ -2,8 +2,8 @@ local colors = require("base46").get_theme_tb "base_30"
 local opts = require("nvconfig").base46
 
 local hl = {
-  IblChar = { fg = colors.line },
-  IblScopeChar = { fg = colors.grey },
+  IblIndent = { fg = colors.line },
+  IblScope = { fg = colors.grey },
 }
 
 local scopehl = opts.transparency and { underline = true } or { bg = colors.black2 }
